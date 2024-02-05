@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <h1 id="logo_text">N<span>K</span></h1>
+        </div>
+        <div id="sections">
+            <a class="sec" href="#">Home</a>
+            <a class="sec" href="#">About</a>
+            <a class="sec" href="#">Skills</a>
+            <a class="sec" href="#">Projects</a>
+            <a class="sec" href="./index.html">Contact</a>
+            <a id="resume" href="./images/resume.pdf">Resume</a>    
+        </div>
+        <div id="menu_div">
+            <a id="menu_home" href="#">Home</a>
+            <div id="menu_image" >
+                <img src="https://www.svgrepo.com/show/26445/menu-symbol-of-three-parallel-lines.svg" alt="">
+           </div>
+           
+        </div>
+        <div id="menu">
+            <a  id="close"  href="#">X</a>
+            <a class="menu_sec" href="#">Home</a>
+            <a class="menu_sec" href="#">About</a>
+            <a class="menu_sec" href="#">Skills</a>
+            <a class="menu_sec" href="#">Projects</a>
+            <a class="menu_sec" href="#">Contact</a>
+            <a id="menu_resume" href="./images/resume.pdf">Resume</a>  
+
+        </div>
+    </div>
+    <div id="main">
+        <div id="first">
+            
+            
+            <div id="name_div">
+                <p id="name">I am Nitish Kumar</p>
+                <div id="name2_div">
+                    <p id="name2">Algorithm Developer</p>
+                </div>
+                <button onclick="Display()" id="resume_btn">Resume</button>
+                <div id="box">
+                    <a id="linkedin" onclick="LinkedIn()" href="#"><img src="https://img.icons8.com/?size=100&id=8808&format=png" alt="linkedin"></a>
+                    <div id="github_div">
+                        <a id="github" onclick="Github()" href="#"><img src="https://img.icons8.com/?size=64&id=16318&format=png" alt=""></a>
+                    </div>
+                        
+                </div>
+            </div>
+            <div id="bg_image">
+                <img src="./images/dev bg2.jpg" alt="">
+                 
+            </div>
+            
+        </div>
+        
+        <div id="about_div">
+            <h2>About Me</h2>
+            <div id="about">
+                <div id="about_text">
+                    <!-- <p>👋 Hi, I'm Nitish Kumar – a tech enthusiast with a flair for web development using HTML and CSS. Proficient in Python, I navigate data structures and specialize in sorting algorithms, analyzing time complexities for optimal solutions. Beyond coding, I'm a curious mind shaping the digital future. Let's turn ideas into reality with creativity and logic! 💻✨.</p> -->
+                    <p>👋 Hi, I'm Nitish Kumar—a Python enthusiast in Data Structures and Algorithms, data structures like stacks, queues, and linked lists. I dive deep into Recursion and Sorting algorithms, analyzing complexities for optimal solutions. With HTML and CSS, I craft visually stunning web experiences. Also made some Intresting Terminal based projects in python like- 2D maze solver, Typing speed test and social media content downloader.  I'm not just a coder but a problem solver, blending creativity and logic. Join me on this journey where technology meets imagination, turning concepts into digital realities. 💻✨</p>
+                </div>
+                <div id="profile">
+                    <img src="./images/nitish ps pic.jpg" alt="">
+                </div>
+            </div>
+
+            <div id="about_section">
+                <div id="profile2">
+                    <img src="./images/nitish ps pic.jpg" alt="">
+                </div>
+                <div id="about_text">
+                    <p>👋 Hi, I'm Nitish Kumar—a Python enthusiast in Data Structures and Algorithms, data structures like stacks, queues, and linked lists. I dive deep into Recursion and Sorting algorithms, analyzing complexities for optimal solutions. With HTML and CSS, I craft visually stunning web experiences. Also made some Intresting Terminal based projects in python like- 2D maze solver, Typing speed test and social media content downloader.  I'm not just a coder but a problem solver, blending creativity and logic. Join me on this journey where technology meets imagination, turning concepts into digital realities. 💻✨</p>
+                </div>
+                
+            
+            </div>
+
+        </div>
+
+        
+        <div id="container">
+        <h2 id="h2_skill">Skills</h2>
+        <div id="skills_div">
+            
+            <div id="html_div">
+                <img src="https://img.icons8.com/?size=96&id=20909&format=png" alt="">
+                <p>HTML</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/?size=96&id=21278&format=png" alt="">
+                <p>CSS</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/?size=96&id=13441&format=png" alt="">
+                <p>Python</p>
+
+            </div>
+            <div id="ds_div">
+                <img src="https://cdn-icons-png.flaticon.com/128/6174/6174618.png" alt="">
+                <p>Data Structures  </p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/?size=160&id=rM03addOSa95&format=png" alt="">
+                <p>Algorithms</p>
+            </div>
+
+        </div>
+        </div>
+        
+        <div id="project_div">
+            <h2 id="project_heading">Projects</h2>
+            <div id="project_box">
+                
+                <div class="project">
+                    <img src="./images/maze2.png" alt="">
+                    <div class="project_text">
+                        <p class="Title" >Name:- 2D Maze solver</p>
+                        <p>Its a 2D Maze solver Terminal based project in python, We can generate the maze with our choice, red ones are bloked wall and circles are open path and after that also can choose to solve find the path from Etart to End. Green circles are path to reach Start point to end point.</p>
+
+                    </div>
+                    <button onclick="ShowMaze()" class="live">Live</button>
+                </div>
+                <div class="project">
+                    <img src="./images/typing.png" alt="">
+                    <div class="project_text">
+                        <p class="Title" >Name:- Typing Test</p>
+                        <p>This is a terminal based project in python and it is based on typing test for user, at first user should enter a uniq username after that user will choose option for start typing test or can see leaderboard or can exit. If user choose typing test when it finishes word per minute, errors, time taken etc will show.</p>
+                    </div>
+                    <button onclick="ShowTyping()" class="live">Live</button>
+                </div>
+                <div class="project">
+                    <img src="./images/youtube.png" alt="">
+                    <div class="project_text">
+                        <p class="Title" >Name:- Video Downloader</p>
+                        <p>This is a Terminal based project in python for download Video or audio from youtube using pytube library of python. Firstly we should paste link from youtube for particular video then we can choose to download video or only audio and then it saves the content in our local computer. and we can easily access that content.</p>
+                    </div>
+                    <button onclick="Showyoutube()" class="live">Live</button>
+                </div>
+                <div class="project">
+                    <img src="./images/insta.png" alt="">
+                    <div class="project_text">
+                        <p class="Title" >Name:- Insta Downloader</p>
+                        <p>Its also a terminal based project in python for download any one's profile data like pictures, reels,etc from Instagram only we need to providethe username of particular profile and it download data with the help of Instaloader library of Python. it also saves the downloaded data into our local computer and easily accessable.</p>
+
+                    </div>
+                    <button onclick="ShowInsta()" class="live">Live</button>
+                </div>
+                <div class="project">
+                    <img src="./images/calendar.png" alt="">
+                    <div class="project_text">
+                        <p class="Title">Name:- Calendar</p>
+                        <p>This is also a terminal based project using tkinter and tcalendar python libraries for check dates and day in from calendar when we run it in the terminal it show a calendar and we can choose the date from that and it will show the date, month,year in dd/mm/yyyy format as output.</p>
+                    </div>
+                    <button onclick="ShowCalendar()" class="live">Live</button>
+                </div>
+
+            </div>
+            
+
+        </div>
+        <h2 id="cont_h2">Contacts</h2>
+        <div id="contact_div">
+            
+            <div id="contact">
+                <div id="email">
+                    <img src="https://img.icons8.com/?size=48&id=85500&format=png" alt="">
+                    <p>nitishkumar50805@gmail.com</p>
+                </div>
+                <div id="phone">
+                    <img src="https://img.icons8.com/?size=48&id=85164&format=png" alt="">
+                    <p id="c_code">+91 <p id="num">9572508615</p></p>
+                </div>
+
+            </div>
+            <div id="bottom_div">
+                <a id="link2" onclick="LinkedIn()" href="#"><img src="https://img.icons8.com/?size=100&id=8808&format=png" alt="linkedin"></a>
+                    <div id="gth_div">
+                        <a id="gth" onclick="Github()" href="#"><img src="https://img.icons8.com/?size=64&id=16318&format=png" alt=""></a>
+                    </div>
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
+
+
