@@ -3,6 +3,10 @@
 body{
     margin: 0px;
 }
+html{
+    scroll-margin-top: 200px;
+    scroll-behavior: smooth;
+}
 #navbar{
     position:fixed;
     height: 65px;
@@ -24,7 +28,7 @@ body{
 }
 
 #logo_text{
-    font-family: sans-serif;
+    font-family:cursive;
     font-weight: 100;
     font-size: 40px;
     color: rgb(71, 71, 71);
@@ -56,18 +60,42 @@ body{
 
 #menu{
     display: none;
-    height:350px;
-    width:100px;
-    align-items: baseline;
+    height: 100vh;
+    width:250px;
+    line-height: -400px;
+    align-items:center;
+    justify-content: center;
     background-color: #333333;
-    margin-left: -130px;
-    margin-top: 420px;
+    margin-left: -240px;
+    margin-top: 820px;
     padding: 20px;
+    transition: .4s all ease-in-out;
+    
+}
+#close{
+    margin-bottom: 110px;
 }
 .menu_sec{
+
+    margin-top: -340px;
+    
+    /* margin-bottom: -300px; */
     text-decoration: none;
     color: whitesmoke;
     font-family: sans-serif;
+}
+
+#menu>a:nth-child(3){
+    margin-top: -390px;
+}
+#menu>a:nth-child(4){
+    margin-top: -450px;
+}
+#menu>a:nth-child(5){
+    margin-top: -500px;
+}
+#menu>a:nth-child(6){
+    margin-top: -540px;
 }
 .menu_sec:hover{
     color: #426ae2;
@@ -75,8 +103,9 @@ body{
 #menu_resume{
     border: 2px solid #426ae2;
     color: #426ae2;
-    width:70px;
+    width:90px;
     border-radius: 10px;
+    margin-top: -550px;
     padding: 8px 4px 8px 12px;
     text-decoration: none;
     font-family: sans-serif;
@@ -85,6 +114,23 @@ body{
     color: #4a4848;
     background-color: whitesmoke;
     border-color: whitesmoke;
+}
+#menu_resume:hover #menu_res2{
+    display: inline-block;
+}
+#menu_resume:hover #menu_res1{
+    display: none;
+}
+#menu_res1{
+    width:15px;
+    height: 15px;
+}
+#menu_res2{
+    display: none;
+    /* mix-blend-mode: lighten; */
+   
+    width:21px;
+    height:19px;
 }
 
 
@@ -111,7 +157,7 @@ body{
     border: 2px solid #426ae2;
     color: #426ae2;
     border-radius: 10px;
-    padding: 8px 10px;
+    padding: 10px 10px;
     text-decoration: none;
     font-family: sans-serif;
 }
@@ -120,8 +166,31 @@ body{
     background-color: #426ae2;
     color:whitesmoke;
 }
-#first{
+#resume:hover #res2{
+    display:inline;
+    /* visibility: visible; */
+    color: whitesmoke;
+    background-color: white;
+    mix-blend-mode: lighten;
+}
+#resume:hover #res1{
+    display: none;
+
+}
+#res2{
+    display: none;
+    /* visibility: hidden; */
+    mix-blend-mode: lighten;
+
+}
+#resume>img{
+    width: 15px;
+    height:15px;
     
+    
+}
+#first{
+    /* border:2px solid red; */
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -142,28 +211,48 @@ body{
     display: none;
 }
 #name_div{
-    width:40%;
+    /* border: 1px solid green; */
+    width:43%;
+}
+#hi{
+    
+    color:rgb(45, 44, 44);
+    width: 70%;
+    font-size: 25px;
+    font-family: sans-serif;
+    
 }
 #name{
-    
-    font-size: 50px;
+    margin-top: -12px;
+    font-size: 45px;
     font-family:sans-serif;
-    color: black;
-    margin-top:30%;
-    margin-left: 10%;
+    color: rgb(44, 44, 44);
+    
 }
 #name2_div{
-    margin-top:-8%;
-    margin-left: 6%;
-    height:100px;
+    
+    width: 100%;
+    margin-top:30%;
+    margin-left: 15%;
+    text-align: left;
 }
 #name2{
     
+    height: 80px;
     font-size: 40px;
     font-family:sans-serif;
     color: #426ae2;
-    overflow: hidden;
     
+}
+#typing{
+    margin-top: -40px;
+    height: 80px;
+}
+
+
+#buttons{
+    margin-left: 15%;
+    text-align: left;
 }
 
 #resume_btn{
@@ -175,41 +264,52 @@ body{
     color:#426ae2;
     font-family:sans-serif;
     border: 2px solid #426ae2;
-    margin-left:-45%;
+    
 }
+
 #resume_btn:hover{
     background-color: #426ae2;
     color: whitesmoke;
     border: 2px solid whitesmoke;
     cursor: pointer;
 }
+
 #box{
+    
     display: flex;
     align-items: center;
-    width: 28%;
+    width: 35%;
     justify-content: space-between;
     font-family:sans-serif;
     border-radius: 50px;
     margin-top:33%;
-    margin-left: 18%;
+    transition: transform .2s;
+}
+#box a:hover{
+    transform: scale(1.25);
 }
 #linkedin>img{
-    width:25px;
-    height:25px;
+    width:30px;
+    height:30px;
     border-radius: 3px;
 }
 #github_div{
     border-radius: 35px;
+    transition: transform .2s;
 }        
 #github>img{
-    width:30px;
-    height:30px;
+    width:37px;
+    height:37px;
     
     border-radius: 100px;
 }
+#github>img:hover{
+    transform: scale(1.25);
+}
 #about_div{
     width:100%;
-    
+    scroll-margin-top: 120px;
+
 }
 #about_div>h2{
     
@@ -244,10 +344,11 @@ body{
     height:270px;
     margin-left: 17%;
     margin-top: -2%;
-    border: 10px solid rgb(153, 151, 151);
-    border-radius: 270px;
+    border: 10px solid grey;
+    border-radius: 50%;
     
 }
+
 #profile>img{
     width:100%;
     height:100%;
@@ -258,6 +359,8 @@ body{
     width: 85%;
     margin-left: 7%;
     border-radius: 20px;
+    scroll-margin-top: 100px;
+
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 #h2_skill{
@@ -292,18 +395,14 @@ body{
 #project_div{
     margin-top: 40px;
     padding-top: 15px;
+    scroll-margin-top: 110px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
 #project_box{
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    gap: 30px;
+    scroll-margin-top: 20px;
     margin-left: 10%;
     width:80%;
-    /* height: 630px; */
-    justify-content: space-between;
-    overflow-x: auto;
     padding: 10px 10px 10px 10px;
 
     
@@ -316,8 +415,14 @@ body{
     color: #4a4848;
 }
 .project{
-    width:300px;
-    border:1px solid #4a4848;
+    border: 2px solid #4a4848;
+    width: 85%;
+    margin-bottom: 50px;
+    border-radius: 20px 5px 20px 5px;
+}
+.proj_cont{
+    display: flex;
+    width:90%;
     border-radius: 20px 5px 20px 5px;
     font-family: sans-serif;
     color: #4a4848;
@@ -325,39 +430,84 @@ body{
     padding: 15px;
 }
 .project_text{
+    margin-left: 40px;
     text-align: left;
     line-height: 22px;
 }
-
-.project>img{
-    width:100%;
+.project_text li{
+    margin-bottom: 8px;
+    
+}
+.proj_image>img{
+    width:250px;
     margin-top: 20px;
     height: 180px;
 }
 .Title{
     font-weight: bold;
+    font-size: 25px;
 }
-.live{
-    width: 23%;
-    text-align: center;
-    padding: 6px;
-    border: 2px solid #4a4848;
-    background-color: transparent;
-    color:#4a4848;
-    border-radius: 6px;
-    font-size: medium;
-    margin-bottom: 50px;
+.links{
+    display: flex;
+    align-items: center;
+}
+.repo{
+    display: flex;
+    height: 45px;
+    width: auto;
+    padding: 0px 12px;
+    justify-content:center;
+    transition: transform .2s;
+    align-items:center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-right: 10%;
+}
+.repo:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+    
+}
+
+.repo>img{
+    margin-left: -5px;
+    height: 40px;
+    width: 40px;
+}
+.live>img{
+    width: 30px;
+    height: 25px;
+}
+.open_live{
+    font-weight:bold;
+    font-family: sans-serif;
+    margin-left: 8px;
+}
+
+.git_live{
+    font-weight:bold;
+    font-family: sans-serif;
+    margin-left: 8px;
+}
+
+#contact_cont{
+    margin-top: 20px;
+    color: whitesmoke;
+    padding: 10px 0px;
+    background-color: #252525;
+    width:100%;
+
+
 }
 
 #contact_div{
     display: flex;
     width:100%;
     margin-top:40px;
-    
+    padding-bottom: 20px;
     text-align: center;
     color: #4a4848;
     font-family: sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 #contact{
     width:40%;
@@ -368,7 +518,7 @@ body{
     margin-top: 3%;
     text-align: center;
     text-decoration: underline;
-    color: #4a4848;
+    color: whitesmoke;
     font-family: sans-serif;
 }
 #email{
@@ -377,13 +527,17 @@ body{
 
 }
 #email>img{
-    height:22px;
-    width: 22px;
-    color: #4a4848;
+    mix-blend-mode: lighten;
+    border: 1px solid #252525;
+    height:25px;
+    width: 28px;
+    background-color: whitesmoke;
+
     
 }
 #email>p{
-    color: #4a4848;
+    color: whitesmoke;
+    letter-spacing: 1px;
     text-decoration: none;
     font-weight: 400;
     font-family: sans-serif;
@@ -392,16 +546,20 @@ body{
 #phone{
     display: flex;
     align-items: center;
+    color: whitesmoke;
 
 }
 #phone>img{
+    mix-blend-mode: lighten;
     height:23px;
     width: 22px;
-    color: #4a4848;
+    background-color: whitesmoke;
+    border: 1px solid #252525;
+    
     
 }
 #c_code{
-    color: #4a4848;
+    color: whitesmoke;
     margin-left: 15px;
     margin-right: 10px;
 }
@@ -414,15 +572,34 @@ body{
     font-family:sans-serif;
     margin-top:0%;
     margin-left: 25%;
+    transition: transform .2s;
 }
 #link2>img{
     width:25px;
     height:25px;
 }
+#bottom_div img:hover{
+    transform: scale(1.25);
+}
 #gth>img{
-    width:32px;
-    height:30px;
+    mix-blend-mode: lighten;
+    width:40px;
+    height:40px;
     border-radius: 100px;
+}
+#last_div{
+    padding-bottom: 4px;
+    padding-top: 0px;
+    width:100%;
+    background-color: #252525;
+    border-top: 1px solid whitesmoke;
+    text-align: center;
+    font-family: cursive;
+    color: whitesmoke;
+    font-size: 15px;
+}
+#last_div span{
+    color: red;
 }
 
 @media all and (min-width:320px) and (max-width: 465px) {
@@ -437,9 +614,6 @@ body{
         width: 45%;
         margin-left: -40px;
     }
-    /* #menu_div:hover #menu{
-        display: grid;
-    } */
     #menu_home{
         color:#333333;
         text-decoration: none;
@@ -451,9 +625,11 @@ body{
     }
     #close{
         color: whitesmoke;
+        height: 40px;
+        width:40px;
         font-size: 20px;
         font-family: sans-serif;
-        margin-left: 90%;
+        margin-left: 95%;
         text-decoration: none;
     }
     #close:hover{
@@ -466,22 +642,46 @@ body{
         display: none;
     }
     #name_div{
-        width:100%;
+        width:90%;
+    }
+    
+    #name2_div{
+        margin-left: 10%;
+        margin-top: 32%;
+        
     }
     #name{
-        
-        font-size:40px;
-    }
-    #name2_div{
-        margin-top: -30px;
-        
-    }
-    #name2_div>p{
         font-size: 35px;
+    }
+    #name2{
+        font-size: 35px;
+        font-family:sans-serif;
+        color: #426ae2;
+        
+    }
+    
+    #typing{
+        width:100%;
+        height:100px;
+        margin-top: -30px;
+        font-size: 35px;
+    }
+    
+    #hi{
+        font-size: 20px;
+    }
+    
+    #buttons{
+        margin-left: 12%;
+    }
+    #about_div{
+        scroll-margin-top: 85px;
+        
     }
     #about{
         display: none;
         margin-bottom: 30px;
+
     }
     #about_section{
         display:grid;
@@ -505,7 +705,8 @@ body{
     }
 
     #box{
-        margin-bottom:12px;
+        width: 50%;
+        margin-bottom:0px;
     }
     
     
@@ -524,21 +725,52 @@ body{
         justify-content: center;
     }  
     
+    
+    .project_text{
+        margin-left: 15px;
+        text-align: left;
+    }
+    
+    #project_box{
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        gap: 50px;
+        margin-left: 10%;
+        width:80%;
+        height: 610px;
+        justify-content: space-between;
+        overflow-x: auto;
+        
+    }
+    .project_text li{
+        margin-left: -30px;
+    }
+    #project_div{
+        scroll-margin-top: 0px;
+        width: 100%;
+    }
+    .proj_cont{
+        width:90%;
+        display: block;
+    }
     .project{
-        width:250px;
+        width:100%;
         border:1px solid #4a4848;
         border-radius: 20px 5px 20px 5px;
         font-family: sans-serif;
         color: #4a4848;
         text-align: center;
-        padding: 15px;
-        margin-bottom: 40px;
+        padding: 0px 10px;
+        margin-bottom: 0px;
     
+    }
+    #project_div{
+        scroll-margin-top: 90px;
     }
     #bottom_div{
         display: flex;
         width:35%;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 50px;
         margin-bottom: 40px;
     
@@ -557,6 +789,7 @@ body{
 }
 
 @media all and (min-width:466px) and (max-width: 767px) {
+  
 #sections{
     visibility: hidden;
 }
@@ -566,12 +799,8 @@ body{
     font-weight: bold;
     width: 45%;
     justify-content: space-between;
-    /* margin-left: -100%; */
-    /* margin-right: 20px; */
 }
-/* #menu_div:hover #menu{
-    display: grid;
-} */
+
 #menu_home{
     color:#333333;
     text-decoration: none;
@@ -582,7 +811,7 @@ body{
     color: whitesmoke;
     font-size: 20px;
     font-family: sans-serif;
-    margin-left: 90%;
+    margin-left: 95%;
     text-decoration: none;
 }
 #close:hover{
@@ -600,18 +829,30 @@ body{
     height: 400px;
 
 }
+#menu{
+    margin-top: 600px;
+}
 #name_div{
-    width:100%;
+    width:88%;
+}
+#name{
+    font-size: 40px;
 }
 #name2_div{
-    margin-top: -30px;
+    margin-top: 32%;
+    font-size: 40px;
 }
+
 #box{
-    margin-bottom:12px;
+    width: 45%;
+    margin-bottom:0px;
 }
 #about{
     display: none;
     
+}
+#about_div{
+    scroll-margin-top: 90px;
 }
 #about_section{
     display:grid;
@@ -641,6 +882,9 @@ body{
     margin-top: 30px;
     margin-left: 0%;
 }
+#container{
+    scroll-margin-top: 85px;
+}
 #skills_div{
     display: grid;
     grid-template-columns: repeat(2,140px);
@@ -649,16 +893,46 @@ body{
     
     justify-content: center;
 }  
+.project_text{
+    margin-left: 15px;
+    text-align: left;
+}
 
+#project_box{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 50px;
+    margin-left: 10%;
+    width:80%;
+    height: 610px;
+    justify-content: space-between;
+    overflow-x: auto;
+    
+}
+.project_text li{
+    margin-left: -30px;
+}
+#project_div{
+    scroll-margin-top: 90px;
+    width: 100%;
+}
+.proj_cont{
+    width:90%;
+    display: block;
+}
 .project{
-    width:250px;
+    width:100%;
     border:1px solid #4a4848;
     border-radius: 20px 5px 20px 5px;
     font-family: sans-serif;
     color: #4a4848;
     text-align: center;
-    padding: 15px;
+    padding: 0px 10px;
+    margin-bottom: 0px;
 
+}
+.links{
+    margin-bottom: 0%;
 }
 #bottom_div{
     display: flex;
@@ -697,6 +971,21 @@ body{
     margin-left: -25px;
     width:60%;
 }
+#hi{
+    font-size: 25px;
+}
+#name{
+    font-size: 40px;
+
+}
+#name2_div{
+    margin-top: 28%;
+    font-size: 40px;
+}
+
+#menu{
+    margin-top: 610px;
+}
 
 #bg_image{
     width:40%;
@@ -705,6 +994,17 @@ body{
 #bg_image>img{
     margin-top: 100px;
     height:400px;
+}
+#project_div{
+    scroll-margin-top: 200px;
+    width: 100%;
+}
+#project_box{
+    width:90%;
+    margin-left: 5%;
+}
+.project{
+    width:100%;
 }
 #profile{
     border: 10px solid rgb(153, 151, 151);

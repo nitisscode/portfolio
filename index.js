@@ -1,18 +1,42 @@
+
+//import {}
+
+var typed= new Typed(".auto_input",{
+    strings:["Algorithm Developer","Python antusiast"],
+    typespeed: 30,
+    backspeed:30,
+    loop:true,
+})
+
+
+
 document.getElementById("menu_image").onclick=()=>{
     //display_menu()
     document.getElementById("menu").style.display="grid"
-    //document.getElementById("menu_div").style.marginRight="40px"
-    document.getElementById("menu_div").style.marginLeft="-42px"
-    document.getElementById("menu").style.display="grid"
+    document.getElementById("menu_div").style.marginRight="40px"
+    //document.getElementById("menu_div").style.marginLeft="-42px"
+    //document.getElementById("menu").style.display="grid"
 }
 
+
 document.getElementById("close").onclick=()=>{
+    closemenu()
+    
+}
+document.getElementsByClassName("menu_sec").onclick=()=>{
+    document.getElementById("menu").style.display="none"
+    closemenu()
+}
+
+function closemenu(){
+    event.preventDefault()
     document.getElementById("menu").style.display="none"
     document.getElementById("menu_div").style.marginLeft="-45px"
+
 }
 
 function Display(){
-    res="https://drive.google.com/file/d/18lz84v4W3aA8yQKeeyIA7x39jl0kki9w/view?usp=sharing"
+    res="./images/nitish resume2.pdf"
     
     window.open(res)
 }
@@ -56,3 +80,7 @@ function ShowCalendar(){
     window.open(link)
     
 }
+// function showresume(){
+//     var resume="./images/Nitish Kumar resume.pdf"
+//     window.open(resume)
+// }
